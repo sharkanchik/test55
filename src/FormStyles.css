@@ -1,0 +1,446 @@
+.body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.application-form {
+    padding: 20px;
+    max-width: 870px;
+    margin: 30px auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-actions {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form-actions button {
+    padding: 10px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+
+.input-error {
+  border: 2px solid red !important;
+  background-color: #fff0f0; 
+}
+
+.error-message {
+  color: red; 
+  font-size: 0.8em;
+  margin-top: 5px;
+  order: 10; 
+}
+
+.form-row {
+    display: grid;
+    gap: 20px; 
+    margin-bottom: 20px;
+}
+
+.form-cell {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.form-cell input {
+    margin-left: 40px;
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%; 
+}
+
+.form-row {
+    grid-template-columns: repeat(2, 1fr); 
+}
+@media (min-width: 800px) {
+    .form-row {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+}
+
+@media (min-width: 600px) and (max-width: 799px) {
+    .form-row {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+.form-row {
+    grid-template-columns: repeat(2, 1fr); 
+    /* ... інші стилі для .form-row */
+}
+
+
+/* --- МЕДІА-ЗАПИТИ ДЛЯ ШИРОКИХ ЕКРАНІВ (800PX+) --- */
+
+@media (min-width: 800px) {
+    .form-row:not(.five-columns) {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+
+    .form-row.five-columns {
+        grid-template-columns: repeat(5, 1fr); 
+    }
+    
+    .form-row.age-check-row {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 40px;
+    }
+    .form-row.five-columns {
+        grid-template-columns: repeat(5, 1fr); 
+    }
+
+}
+
+.age-check-group {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px dashed #eee;
+}
+
+.check-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.check-title {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.label {
+    display: block;
+    font-size: 0.8em;
+    color: #555;
+    margin-top: 2px;
+}
+.radio-options input[type="radio"] {
+    margin-right: 5px;
+}
+
+.radio-error {
+    color: red;
+}
+
+
+
+.form-row.age-check-row {
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px;
+}
+
+.input-line input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 8px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    font-size: 0.9em;
+        flex-direction: column;
+    display: flex;
+}
+
+
+ .field-group {
+            display: flex;
+            margin-bottom: 5px;
+            align-items: flex-end; /* Вирівнювання тексту за нижнім краєм */
+        }
+
+        .field {
+            flex-grow: 1;
+            padding-right: 20px;
+            min-width: 150px; /* Мінімальна ширина для кращого відображення */
+        }
+
+
+
+        /* Стилі для секцій */
+        .section-header {
+            font-weight: bold;
+            background-color: #e0e0e0;
+            padding: 5px;
+            margin-top: 15px;
+            border: 1px solid #000;
+        }
+
+
+
+        /* Стилі для блоків Education/Skills */
+        .education-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 5px;
+        }
+
+        .education-table th, .education-table td {
+            border: 1px solid #000;
+            padding: 5px;
+            text-align: left;
+            height: 30px; /* Для імітації висоти рядків */
+        }
+
+        .education-table th {
+            background-color: #f0f0f0;
+            font-size: 0.9em;
+        }
+
+        .full-width-input {
+            width: 100%;
+            min-height: 50px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+
+        .note {
+            font-size: 0.75em;
+            margin-top: 10px;
+        }
+        .in{
+            align-items: center; 
+            font-size: 0.9em;
+        }
+        .lab{
+            margin-left: 20px;
+        }
+        .lab2{
+                display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+        }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;     
+    gap: 20px; 
+}
+.grid-container1 {
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;     
+    gap: 20px; 
+}
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;     
+    gap: 20px; 
+}
+
+.phone-input-container .input-error {
+    border: 2px solid red !important;
+}
+
+.phone-error-container .flag-dropdown {
+    border: 2px solid red;
+    border-right: none;
+}
+.phone-error-container .form-control {
+    border: 2px solid red;
+    border-left: none;
+}
+.single-line-field {
+    /* Робимо цю секцію на всю ширину (1 колонка) незалежно від розміру екрана */
+    grid-template-columns: 1fr; 
+}
+
+.underline-field-wrapper {
+    /* Вмикаємо Flexbox: мітка зліва, інпут займає простір справа */
+    display: flex;
+    align-items: flex-end; 
+    margin-bottom: 5px; 
+}
+
+.field-label {
+font-size: 16px;    
+    font-weight: 400;
+    margin-left: 40px; 
+    white-space: nowrap; 
+    padding-bottom: 2px; }
+
+.underline-input {
+    flex-grow: 1; 
+    
+    border: none;
+    border-bottom: 1px solid #000; 
+    background: transparent;
+    padding: 0; 
+    margin: 0;
+    outline: none;
+    font-size: 1em;
+}
+
+.input-error-underline {
+    border-bottom: 2px solid red !important;
+    background-color: #fff0f0 !important; 
+}
+
+.work-type-row {
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+}
+
+.work-type-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+    flex-wrap: wrap;
+}
+
+.work-type-question {
+    font-weight: 500;
+    font-size: 1em;
+    flex-shrink: 0;
+}
+
+.checkbox-label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+    flex-shrink: 0; 
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-right: 5px;
+    transform: scale(1.1);
+}
+
+
+
+@media (min-width: 800px) {
+    .work-type-wrapper {
+        flex-wrap: nowrap;
+    }
+}
+.grid-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20px;
+}
+
+@media (min-width: 800px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr); /* 4 колонки на Desktop */
+    }
+}
+
+.education-section {
+    margin-top: 40px;
+    border: 1px solid #ccc;
+}
+
+.education-section .section-header {
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 10px;
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.education-table-container {
+    width: 100%;
+    /* КЛЮЧОВЕ АДАПТИВНЕ РІШЕННЯ: Горизонтальна прокрутка для таблиці на мобільних */
+    overflow-x: auto;
+}
+
+.education-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    /* Гарантуємо, що таблиця не стискається на мобільних */
+    min-width: 750px; 
+}
+
+.education-table-container th, 
+.education-table-container td {
+    border: 1px solid #000;
+    padding: 0;
+    vertical-align: top;
+    height: 60px;
+}
+
+.education-table-container th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+
+.education-table-container th:nth-child(1) { width: 20%; }
+.education-table-container th:nth-child(2) { width: 30%; }
+.education-table-container th:nth-child(3) { width: 10%; }
+.education-table-container th:nth-child(4),
+.education-table-container th:nth-child(5) { width: 10%; }
+.education-table-container th:nth-child(6) { width: 20%; }
+
+.education-input {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: none;
+    padding: 5px;
+    background: transparent;
+    outline: none;
+}
+
+.education-level-cell {
+    text-align: left;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.grade-checkboxes {
+    display: flex;
+    gap: 10px;
+    padding-top: 5px;
+}
+
+.grade-checkboxes label {
+    display: inline-flex;
+    align-items: center;
+}
+
+.skills-area {
+    padding: 15px;
+}
+
+.skills-area textarea {
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    padding: 5px;
+    resize: vertical;
+}
+
+.skills-area .note-text {
+    font-size: 0.8em;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+.footer{
+    text-align: center;
+    padding: 15px;
+    font-size: 30PX;
+    color: #000000;
+}
