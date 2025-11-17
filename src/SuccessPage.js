@@ -96,7 +96,7 @@ const SuccessPage = () => {
                 <div className="header">
                     <div className="left">
                         <div className="wrapper-img">
-                            <img src="https://th.bing.com/th/id/OIP.TIrgVWr5cRfBeTzOBfy7oQHaHu?w=166&h=180&c=7&r=0&o=7&pid=1.7&rm=3" className="profile-img" alt="Profile" />
+                            <img src="https://th.bing.com/th/id/OIP.NZKX_lBB5s_NHz1iXny8rQHaE8?w=262&h=180&c=7&r=0&o=7&pid=1.7&rm=3" className="profile-img" alt="Profile" />
                         </div>
                         <div className="name">
                             <h2 id="cv-full-name">{fullName}</h2>
