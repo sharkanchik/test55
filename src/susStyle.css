@@ -5,7 +5,7 @@
 }
 
 body{
-    animation:change-color 2s infinite;
+    animation:change-color 7s infinite;
     /* animation-timing-function: initial; */
 }
 .hr {
